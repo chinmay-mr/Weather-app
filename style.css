@@ -1,0 +1,102 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url('src/timeless-beauty-of-mount-fuji-japan-xu-1600x900 copy.jpg'); /* Default background */
+    transition: background-image 0.5s ease-in-out; /* Smooth background transition */
+    color: #fff;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Search bar */
+.weather-search {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.weather-search input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.weather-search button {
+    background-color: #0072ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.weather-search button:hover {
+    background-color: #005ecb;
+}
+
+/* Loading and error */
+.hidden {
+    display: none;
+}
+
+#error {
+    margin: 10px 0;
+    color: #ff4d4d;
+    font-size: 14px;
+}
+
+.error-icon {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+/* Weather display */
+#weatherResult h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+#weatherIcon {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+#temperature {
+    font-size: 20px;
+}
+
+#unitToggle {
+    margin-top: 10px;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#unitToggle:hover {
+    background-color: #e67e22;
+}
